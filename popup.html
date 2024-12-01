@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹幕设置</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>弹幕设置</h1>
+        </header>
+
+        <main>
+            <div id="settings">
+                <div id="danmu-list">
+                    <!-- 动态生成弹幕输入项 -->
+                </div>
+                <button id="add-danmu" class="btn primary-btn">
+                    <span class="icon">+</span> 添加弹幕
+                </button>
+            </div>
+        </main>
+
+        <footer>
+            <div class="button-group">
+                <button id="save-settings" class="btn primary-btn">保存设置</button>
+                <div class="import-export-group">
+                    <button id="export-settings" class="btn secondary-btn">导出设置</button>
+                    <input type="file" id="import-settings" accept=".json">
+                    <!-- <button class="btn secondary-btn import-button">导入设置</button> -->
+                    <label for="import-settings" class="import-button btn secondary-btn ">导入设置</label>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
